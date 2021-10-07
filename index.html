@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daria's Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Я создала html, styles и js файлы, все подключила, нашла и подключила шрифты. Section это база, дальше calculator-view и три дива screen1(где выводятся числа), screen2(выводится исчислительный процесс) и tempo-result(данный результат до нажатия на =) - это верхняя часть калькулятора, и all_buttons(тут жутко затупила, но решила для css сделать классы кнопка и личное для каждого, чтобы сделать разметку)  -->
+    <section>
+        <div class="container">
+            <div class="calculator">
+                <div class="screen">
+                  <div class="screen_1">0</div>
+                    <div class="screen_2">0</div>
+                    <div class="tempo-result">0</div>
+                </div>
+                <div class="all_button">
+                    <div class="button number seven">7</div>
+                    <div class="button number eight">8</div>
+                    <div class="button number nine">9</div>
+                    <div class="button operation pl">+</div>
+                    <div class="button number four">4</div>
+                    <div class="button number five">5</div>
+                    <div class="button number six">6</div>
+                    <div class="button operation min">-</div>
+                    <div class="button number one">1</div>
+                    <div class="button number two">2</div>
+                    <div class="button number three">3</div>
+                    <div class="button operation mult">x</div>
+                    <div class="button number btn-0">0</div>
+                    <div class="button number decimal">.</div>
+                    <div class="button all-clear">C</div>
+                    <div class="button operation divis">/</div>
+                    <div class="button equal-sign">=</div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <script src="./main.js"></script>
+    </body>
+</html>

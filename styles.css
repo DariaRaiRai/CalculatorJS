@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+section{
+    background-color: #435560;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 90%;
+    max-width: 400px;
+    background-color: #6E7C7C;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.screen{
+    background-color: #F0E4D7;
+    height: 100px;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+}
+
+.screen_1{
+    opacity: .5;
+    font-size: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.tempo-result{
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    font-size: 20px;
+    opacity: .5;
+}
+
+.all_button{
+    color: #C8C6A7;
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, minmax(1em, 1fr));
+    grid-template-rows: repeat(4, minmax(1em, 1fr));
+    grid-template-areas:
+    "seven eight nine pl equal-sign"
+    "four five six min equal-sign"
+    "one two three mult equal-sign"
+    "dott btn-0 all-clear divis equal-sign";
+    /* Тут я не увереннаЮ правильно ли, но пока все выглядит нормально, я только не могу понять, как мне  = перенести в правую часть калькулятора*/
+}
+
+.equal-sign{
+    /* grid-area: equal-sign;
+    text-orientation: mixed;
+    grid-row-start: 1;
+    grid-row-end: 5; */
+    grid-column: span 4;
+  }
+  
+
+.pl{
+      grid-area: pl;
+  }
+
+.min{
+    grid-area: min;
+}
+
+.mult{
+    grid-area: mult;
+}
+
+.divis{
+    grid-area: divis;
+  }
+
+.decimal{
+    grid-area: dott;
+}
+
+.btn-0{
+    grid-area: btn-0;
+  }
+
+.all-clear{
+    grid-area: all-clear;
+  }
+
+.one{
+    grid-area: one;
+  }
+  
+.two{
+    grid-area: two;
+  }
+  
+.three{
+    grid-area: three;
+  }
+  
+.four{
+    grid-area: four;
+  }
+  
+.five{
+    grid-area: five;
+  }
+  
+.six{
+    grid-area: six;
+  }
+  
+.seven{
+    grid-area: seven;
+  }
+  
+.eigh{
+    grid-area: eigh;
+  }
+
+.nine{
+    grid-area: nine;
+  }
+  
+.button{
+    border-radius: 5px solid #FAF3F3;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #E1E5EA;
+}
